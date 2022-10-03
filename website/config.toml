@@ -1,0 +1,81 @@
+baseURL = "https://log.jtyoui.com"
+languageCode = "en-us"
+title = "日志·张伟"
+theme = "kagome"
+paginate = 7
+copyright = "© 2021 <a href=\"https://github.com/miiiku/hugo-theme-kagome\">kagome</a>."
+hasCJKLanguage = true
+
+
+# 作者信息
+[author]
+name = "张伟"
+email = "jtyoui@qq.com"
+description = "生活琐事"
+avatar = "/鹊翼.png"
+
+# 菜单/导航栏
+[menu]
+[[menu.main]]
+identifier = "/"
+name = "主页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "/photo"
+name = "相册"
+url = "/photo"
+weight = 2
+
+[[menu.main]]
+identifier = "/video"
+name = "视频"
+url = "/video"
+weight = 3
+
+# 底部社交图标
+[[menu.social]]
+identifier = "github"
+name = "github"
+url = "https://github.com/jtyoui/log"
+weight = 1
+
+# URL格式
+[permalinks]
+posts = "/:section/:year:month:day:15:04/"
+files = "/:section/:year:month:day:15:04/"
+docs = "/:section/:year:month:day:15:04/"
+
+# 主题相关配置项
+[params]
+keywords = ['theme', 'kagome']
+description = ""
+mainSections = ["posts"]
+# 国内备案号
+beian = ""
+# TOC目录出现字符长度限制
+toc_show_len = 300
+
+[params.analytics]
+baidu = ""
+
+[params.widget]
+# 相关文章推荐数量
+articles_count = 6
+# 分类相关显示数量
+categories_count = 6
+# 标签相关显示数量
+tags_count = 12
+
+[params.aplayer]
+theme = "#b7daff"
+autoplay = false
+loop = "none"
+mutex = true
+
+[params.dplayer]
+theme = "#b7daff"
+autoplay = false
+loop = false
+mutex = true
